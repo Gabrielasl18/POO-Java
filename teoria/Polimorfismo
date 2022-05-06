@@ -2,6 +2,9 @@ POLIMORFISMO: "a mesma ação, se comportando diferente".
 Capacidade de um objeto poder ser refereniado de várias formas, ou seja, é a capacidade de tratar objetos criados a partir
 das classes específicas como objetos de uma classe genérica.
 
+Cuidado, polimorfismo nao quer dizer que o objeto fica se TRANSFORMANDO, muito pelo contrário, um objeto nasce de um tipo
+e morre daquele tipo, o que pod mudar é a maneira como nos REFERIMOS a ele.
+
 exemplo: PAGAMENTO(processar()).
          BOLETO(processar()).
          CREDITO(processar()).
