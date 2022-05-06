@@ -1,0 +1,7 @@
+A OO é um paradigma de análise, projeto e programação de sistemas de software baseado na composição e interação entre diversas unidades de software chamadas de objetos.
+
+Pilares de OO:
+
+- ABSTRAÇÃO: processo pelo qual se isolam características de um objeto, considerando os que tenham em comum certos grupos de objetos.
+- REUSO: capacidade de criar novas unidades de código a partir de outras já existentes.
+- ENCAPSULAMENTO: capacidade de esconder complexidades e proteger dados.
