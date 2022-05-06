@@ -1,0 +1,14 @@
+POLIMORFISMO: "a mesma ação, se comportando diferente".
+
+exemplo: PAGAMENTO(processar()).
+         BOLETO(processar()).
+         CREDITO(processar()).
+         DEBITO(processar()).
+         PIX(processar()).
+         
+         
+POLIMORFISMO X SOBRESCRITA
+
+POLIMORFISMO = sabemos que vai se comportar diferente;
+SOBRESCRITA = PODE se comportar diferente.
+
