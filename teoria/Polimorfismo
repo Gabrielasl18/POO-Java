@@ -1,4 +1,6 @@
 POLIMORFISMO: "a mesma ação, se comportando diferente".
+Capacidade de um objeto poder ser refereniado de várias formas, ou seja, é a capacidade de tratar objetos criados a partir
+das classes específicas como objetos de uma classe genérica.
 
 exemplo: PAGAMENTO(processar()).
          BOLETO(processar()).
