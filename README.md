@@ -31,3 +31,16 @@ public class Carro{
 ```
 
 ___
+
+## Blocos de Inicialização
+> Executado ANTES do construtor, é executado toda vez que vc cria um objeto(não importa onde está no código,ele vai executar primeiro) ele inicializa a variável.                                          
+*APENAS ASSIM:*
+
+```java
+{
+
+}
+```
+
+___ 
+
