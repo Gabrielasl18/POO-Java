@@ -1,5 +1,10 @@
 # Programação Orientada à Objetos
-> <p>Aproxima o mundo digital do mundo real</p>.
+> <p>Paradigma <b>(modelo, padrão para especificação de um problema)</b> baseado em objetos.Aproxima o mundo digital do mundo real</p>.
+> Paradigmas existentes na programação de computadores:
+* Procedimental;
+* Funcional;
+* Lógico;
+* Orientado a Objetos.
 
 ![poo2](https://user-images.githubusercontent.com/96033603/188351448-79a96dc1-4608-4b31-aa75-d9355c8bd96c.png)
 
