@@ -55,8 +55,8 @@ ___
 <i>FORMA ERRADA:</i>
 
 ```java
-public class Pessoa {
-	String nome;
+public class Pessoa { // classe
+	String nome; // atributo
 	Pessoa(String nome) {
 	nome = nome;
 	}
@@ -65,8 +65,8 @@ public class Pessoa {
 <i>FORMA CORRETA:</i>
 
 ```java
-public class Pessoa {
-	String nome;
+public class Pessoa { // classe
+	String nome; // atributo
 	Pessoa(String nome) {
 	this.nome = nome; // fiz referência ao meu atributo que pertence à classe com o this.
 	}
