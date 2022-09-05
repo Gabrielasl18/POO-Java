@@ -5,24 +5,8 @@ ___
 > Associação ocorre quando uma classe possui ATRIBUTOS do tipo de outra classe.
 Estamos dizendo que Carro possui Pneu(4 pneus).
 
-![associacao](../imgs/associacao)
+![associacao](https://github.com/Gabrielasl18/POO-Java/issues/1#issue-1361287090)
 
- ┌───────────────┐
- │     Carro     │
- ├───────────────┤
- │+ Pneu p1      │
- │+ Pneu p2      │
- │+ Pneu p3      ├─────────┐
- │+ Pneu p4      │         │
- │               │         │
- ├───────────────┤         │    ┌────────────────┐
- │    liga()     │         │    │      Pneu      │
- │    desliga()  │         │    ├────────────────┤
- └───────────────┘         └──► │                │
-                                │+ Pressao : int │
-                                ├────────────────┤
-                                │     rodar()    │
-                                └────────────────┘
 ```java
 public class Pneu{
 	int Pressao;
