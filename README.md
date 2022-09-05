@@ -1,5 +1,14 @@
 # Programação Orientada à Objetos
 > <p>Paradigma <b>(modelo, padrão para especificação de um problema)</b> baseado em objetos.Aproxima o mundo digital do mundo real</p>
+
+>Pilares de OO:
+<ul type="circle">
+	<li><i>Abstração:</i> processo pelo qual se isolam características de um objeto, considerando os que tenham em comum certos grupos de objetos.</li>
+	<li><i>Reuso:</i> capacidade de criar novas unidades de código a partir de outras já existentes.</li>
+	<li><i>Encapsulamento:</i> capacidade de esconder complexidades e proteger dados.</li>
+</ul>
+
+
 > Paradigmas existentes na programação de computadores:
 * Procedimental (Algorítmica):<i> Computação ocorre através da execução de instruções passo a passo. Ex: Pascal</i>
 
