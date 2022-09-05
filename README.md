@@ -1,6 +1,12 @@
 # Programação Orientada à Objetos
 > <p>Paradigma <b>(modelo, padrão para especificação de um problema)</b> baseado em objetos.Aproxima o mundo digital do mundo real</p>
 
+
+
+
+
+
+
 >Pilares de OO:
 <ul type="circle">
 	<li><i>Abstração:</i> processo pelo qual se isolam características de um objeto, considerando os que tenham em comum certos grupos de objetos.</li>
@@ -99,6 +105,133 @@ ___
 * '-' = privado: atributo ou método de um objeto dessa classe não pod ser acessado por nenhum outro objeto <b>(nenhuma visibilidade externa).</b>
 
 * '#' = protegido: atributo ou método de um objeto dessa classe pode ser acessado apenas por objetos de classes que sejam derivadas dessa através do mecanismo de herança.
+
+___
+
+## Polimorfismo
+> <b>Poli</b> = muitas. <b>Morfo</b> = formas. 
+> Permite que um mesmo nome represente vários <i>comportamentos</i> diferentes.
+
+### Assinatura do Método
+> Quantidade e os tipos dos parâmetros.Exemplo:
+
+```java
+public float calcMedia(float n1, float n2) {
+	return n1;
+}
+public int calcMediana(float v1, float v2) {
+	return v1;
+}
+```
+<i>Os dois métodos tem a mesma assinatura,pois apesar de terem nomes diferentes e tipo de retorno diferente, tem a mesma quantidade e tipo dos parâmetros</i>
+
+Continunando no polimorfismo...
+
+### Polimorfismo de Sobreposição.
+
+```java
+public class abstract class Animal {
+	protected float peso;
+	protected int idade;
+	protected int membros;
+	public void abstract locomover();
+	public void abstract alimentar();
+	public void abstract emitirSom();
+} /*Não pode ser usada como objeto, pois é uma classe abstrata.*/
+
+class Mamifero extends Animal {
+	private string corPelo;
+	@Sobrepor
+	public void locomover() {
+		System.out.println("Correndo")
+	}
+	@Sobrepor
+	public void alimentar() {
+		System.out.println("Mamando");
+	}
+	@Sobrepor
+	public void emitirSom() {
+		System.out.println("Som de Mamífero");
+	}
+} /*Pode ser criado um objeto a partir dessa classe, pois não é abstrata.*/
+
+class Aves extends Animal {
+	private string corPena;
+	@Sobrepor
+	public void locomover() {
+		System.out.println("Voando")
+	}
+	@Sobrepor
+	public void alimentar() {
+		System.out.println("Comendo frutas");
+	}
+	@Sobrepor
+	public void emitirSom() {
+		System.out.println("Som de Ave");
+	}
+	public void fazerNinho() {
+		System.out.println("Construiu um ninho");
+	}
+} /*Pode ser criado um objeto a partir dessa classe, pois não é abstrata.*/
+
+
+public static void Main(String[] args){
+	m = new Mamifero(); // instânciando um objeto a partir da classe Mamífero
+	a = new Ave(); // instânciando um objeto a partir da classe Ave
+	
+	m.setPeso(85.3);
+	m.setIdade(2);
+	m.setMembros(4);
+	m.locomover(); // Correndo
+	m.alimentar(); // Mamando
+	m.emitirSom(); // Som de Mamífero
+	
+	a.setPeso(0.89);
+	a.setIdade(2);
+	a.setMembros(4);
+	a.locomover(); // Voando
+	a.alimentar(); // Comendo frutas
+	a.emitirSom(); // Som de Ave
+	a.fazerNinho();
+}
+```
+<b>Chamei os mesmos métodos, com os mesmos nomes para objetos diferentes e obtive diferentes tipos de respostas, isso é o <i>POLIMORFISMO</i>.</b>
+
+<b>A gente sobrepôs a classe Animal com as classes mamíferos, aves, ou seja, substituímos um método de uma superclasse na sua subclasse, usando a mesma assinatura e estiverem e classes diferentes,  isso é o <i>POLIMORFISMO DE SOBREPOSIÇÃO</i></b>
+
+![R](https://user-images.githubusercontent.com/96033603/188506922-e4a46d21-7aaa-4488-9248-932096951fe0.png)
+
+
+```java
+class Canguru extends Mamífero { /*Terceiro nível de herança*/
+	public void usarBolsa(){
+		System.out.println("Usando Bolsa");
+	}
+	@Sobrepor
+	public void locomover() { /*Vai sobrepor a sobreposição, pois o locomover do canguro, vai ser diferente do "normal" dos mamíferos.*/
+		System.out.println("Saltando");
+	}	
+}
+class Cachorro extends Mamífero() {
+} /*Não quer dizer que está vazio, apenas está extendendo só da Superclass(sua mãe)*/
+
+```
+
+### Polimorfismo de Sobrecarga
+
+```java 
+class Cachorro extends Lobo {
+	public void reagir(string frase){
+	}
+	public void reagir(int hora, int min){
+	}
+	public void reagir(bool dono){
+	}
+	public void reagir(int idade, float peso){
+	}
+}
+```
+![R3](https://user-images.githubusercontent.com/96033603/188507307-398cfc73-8393-4d43-89e6-6362563c22c9.png)
 
 ___
 
