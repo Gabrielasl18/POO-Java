@@ -33,7 +33,7 @@ public class Carro{
 ___
 
 ## Blocos de Inicialização
-> Executado ANTES do construtor, é executado toda vez que vc cria um objeto(não importa onde está no código,ele vai executar primeiro) ele inicializa a variável.                                          
+> Executado ANTES do construtor, é executado toda vez que vc cria um objeto(não importa onde está no código,ele vai executar primeiro) ele inicializa a variável.                                        
 *APENAS ASSIM:*
 
 ```java
@@ -44,3 +44,24 @@ ___
 
 ___ 
 
+## Getters and Setters
+> Usados para proteger seus dados, especialmente na criação de classes.
+> Para cada instância de variável, um método getter retorna seu valor, 
+enquanto um método setter define ou atualiza.Com isso em mente, getters e setters também são conhecidos como métodos de ACESSO e de  
+MODIFICAÇÃO,respectivamente.                                         
+
+<dl>
+	<dt>GETTER</dt>
+	<dd>Retorna o valor do atributo.</dd>
+</dl>         
+
+<dl>
+	<dt>SETTER</dt>
+	<dd>Recebe um parâmetro e coloca no atributo</dd>
+</dl>        
+                                                                     
+<b>POR QUE USAR?</b>
+<i>Eles permitem controlar a forma como as variáveis impor
+tantes são acessadas e atualizdas no seu código.</i>                     
+                                                                     
+<b>(TODO MÉTODO GETTER E SETTER É PÚBLICO)</b>                               
