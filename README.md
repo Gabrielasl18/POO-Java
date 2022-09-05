@@ -1,14 +1,13 @@
 # Programação Orientada à Objetos
 > <p>Paradigma <b>(modelo, padrão para especificação de um problema)</b> baseado em objetos.Aproxima o mundo digital do mundo real</p>
 > Paradigmas existentes na programação de computadores:
-* Procedimental (Algorítmica);
-<i>Computação ocorre através da execução de instruções passo a passo. Ex: Pascal.</i>
-* Funcional;
-<i>Computação baseada em cálculo de funções. Ex: Lisp, Haskell.</i>
-* Lógico;
-<i>Computação baseada em fatos e regras. Ex: Prolog.</i>
-* Orientado a Objetos.
-<i>Computação baseada em objetos que se intercomunicam.Objetos contém dados e métodos. Ex: C++,Java.</i>
+* Procedimental (Algorítmica):<i>Computação ocorre através da execução de instruções passo a passo. Ex: Pascal</i>
+
+* Funcional:<i>Computação baseada em cálculo de funções. Ex: Lisp, Haskell.</i>
+
+* Lógico:<i>Computação baseada em fatos e regras. Ex: Prolog.</i>
+
+* Orientado a Objetos:<i>Computação baseada em objetos que se intercomunicam.Objetos contém dados e métodos. Ex: C++,Java.</i>
 
 ![poo2](https://user-images.githubusercontent.com/96033603/188351448-79a96dc1-4608-4b31-aa75-d9355c8bd96c.png)
 
