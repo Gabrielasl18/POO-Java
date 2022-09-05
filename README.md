@@ -5,6 +5,8 @@ ___
 > Associação ocorre quando uma classe possui ATRIBUTOS do tipo de outra classe.
 Estamos dizendo que Carro possui Pneu(4 pneus).
 
+![associacao](../imgs/associacao)
+
  ┌───────────────┐
  │     Carro     │
  ├───────────────┤
