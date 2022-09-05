@@ -99,3 +99,39 @@ ___
 </ol>
 
 ___
+
+# Overloading
+> Dois métodos de uma classe podem ter o mesmo nome, desde que suas assinaturas sejam diferentes.Tal situação não gera conflito pois o compilador é capaz de detectar qual método deve ser escolhido a partir da análise dos tipos de ARGUMENTOS.Nesse caso, diz-se que ocorre a ligação prematura (early binding) para o metódo correto.
+
+```java
+ 	
+PUBLIC VOID nome(String nome,int idade,int altura){
+ 
+}
+PUBLIC VOID nome(String nome,int idade,int altura, int peso){
+ 
+}		
+```
+<b>(DIFERENCIAM-SE NOS ARGUMENTOS).</b>
+
+
+___
+
+# Sobrescrita de Métodos
+> Sobrescrever (redefinir) o método de superclasse com uma implementação adequada; método especial, toda classe herda direta ou indiretamente da classe Object, ela retorna uma String representando um objeto. a linha System.out.println(o); chama o método toString() do objeto o, implicitamente, logo é mais fácil 
+chamar toString do objeto O.
+
+<i>Seu objetivo é trazer uma representação textual de uma instância de um objeto.</i>
+ 
+```java
+public String toString(){ //mesma quantidade de parâmetro, mesmo nome etc...
+	return ...;
+}
+```
+
+___
+
+
+
+
+
