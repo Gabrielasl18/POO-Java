@@ -65,3 +65,37 @@ MODIFICAÇÃO,respectivamente.
 tantes são acessadas e atualizdas no seu código.</i>                     
                                                                      
 <b>(TODO MÉTODO GETTER E SETTER É PÚBLICO)</b>                               
+
+___
+
+## Modificador Estático
+> Torna possível o atributo ser inicializado em qualquer parte da classe, mas quando RECEBE um valor, ele é compartilhado com TODOS os OBJETOS DA CLASSE.SUA INICIALIZAÇÃO não pode ocorrer no método construtor, sendo possível sua inicialização apenas diretamente na declaração do atributo ou no bloco de inicialização estático.Geralmente utilizados visando compartilhamento de informações entre os objetos e para acesso direto aos atributos da classe, sem necessidade de existir algumo objeto instanciado dessa classe. A gente não precisa instânciar os métodos, só usar.                  
+
+```java
+STATIC {
+}                  
+	OU 
+	
+STATIC STRING NOME; 
+
+	OU 
+	
+PUBLIC STATIC NOME{
+}
+```
+
+___
+
+# Ordem de inicialização
+
+<ol>
+	<li>Espaço em memória é alocado para o objeto ser construído;</li>
+	<li>Cada um dos atributos do objeto é criado e inicializado com os valores default;</li>
+	<li>O construtor da superclasse é chamado;</li>
+	<li>A inicialização dos atributos via declaração e o código do bloco de inicialização da superclassse são executados na ordem em que aparecem;</li>
+	<li>O código do construtor da superclasse é chamado;</li>
+	<li>Passo 4 para a subclasse é executado;</li>
+	<li>O código do construtor da classe é executado.</li>
+</ol>
+
+___
