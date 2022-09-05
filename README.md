@@ -157,6 +157,22 @@ MODIFICAÇÃO,respectivamente.
                                                                      
 <b>(TODO MÉTODO GETTER E SETTER É PÚBLICO)</b>                               
 
+<i>Getters ex</i>
+```java
+	int getHeight() 
+	{
+	  return height;
+	}
+```
+
+<i>Setters ex</i>
+```java
+	void setHeight(int h) 
+	{
+	  this.h = h;
+	}
+```
+
 ___
 
 # Método Construtor
