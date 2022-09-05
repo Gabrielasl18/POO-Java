@@ -49,6 +49,31 @@ ___
 
 ___
 
+## This
+> Referencia um atributo que pertence à classe.Serve para construtores e métodos.Ex abaixo com construtores:
+
+<i>FORMA ERRADA:</i>
+
+```java
+public class Pessoa {
+	String nome;
+	Pessoa(String nome) {
+	nome = nome;
+	}
+}
+```
+<i>FORMA CORRETA:</i>
+
+```java
+public class Pessoa {
+	String nome;
+	Pessoa(String nome) {
+	this.nome = nome; // fiz referência ao meu atributo que pertence à classe com o this.
+	}
+}
+```
+___
+
 ## Linguagem de Modelagem Unificada (UML)
 > Na Unified Modeling Language (UML), a representação para uma classe no diagrama de classes é tipicamente expressa na forma gráfica.
 
@@ -128,10 +153,26 @@ MODIFICAÇÃO,respectivamente.
 </dl>        
                                                                      
 <b>POR QUE USAR?</b>
-<i>Eles permitem controlar a forma como as variáveis impor
-tantes são acessadas e atualizdas no seu código.</i>                     
+<i>Eles permitem controlar a forma como as variáveis importantes são acessadas e atualizdas no seu código.</i>                     
                                                                      
 <b>(TODO MÉTODO GETTER E SETTER É PÚBLICO)</b>                               
+
+___
+
+# Método Construtor
+> Ele já vai iniciar da forma que está nesse método.
+
+```java
+Class Caneta {
+	Caneta(string m, string c, double p) {
+		setModelo(m);
+		setCor(c);
+		setPonta(p);
+		tampar();
+	}
+}
+c1 = new Caneta("BIC","Azul",0.5);
+```
 
 ___
 
@@ -197,8 +238,3 @@ public String toString(){ //mesma quantidade de parâmetro, mesmo nome etc...
 ```
 
 ___
-
-
-
-
-
