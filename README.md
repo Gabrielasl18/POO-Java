@@ -14,6 +14,13 @@
 	<li><i>Encapsulamento:</i> capacidade de esconder complexidades e proteger dados.</li>
 </ul>
 
+<b>OU</b>
+
+<ul type="circle">
+	<li><i>Encapsulamento:</i> Permite de esconder complexidades e proteger dados.</li>
+	<li><i>Herança:</i> Permite basear uma nova classe na definição de uma outra classe previamente existente.</li>
+	<li><i>Polimorfismo:</i> Permite que um mesmo nome represente vários <i>comportamentos</i> diferentes.</li>
+</ul>
 
 > Paradigmas existentes na programação de computadores:
 * Procedimental (Algorítmica):<i> Computação ocorre através da execução de instruções passo a passo. Ex: Pascal</i>
@@ -106,6 +113,55 @@ ___
 
 * '#' = protegido: atributo ou método de um objeto dessa classe pode ser acessado apenas por objetos de classes que sejam derivadas dessa através do mecanismo de herança.
 
+___
+
+## Herança
+> Permite basear uma nova classe na definição de uma outra classe previamente existente.Ex:
+
+<i>Tipos de Herança</i>
+<ul type="circle">
+	<li><i>Herança de Implementação</i>.</li>
+	<li><i>Herança para Diferença</i>.</li>
+</ul>
+
+<i>OBS:</i>A classe MÃE pode ser chamada de <b>PROGENITORA</b> ou então <b>SUPERCLASSE</b>.
+
+<i>OBS:</i>A classe FILHO pode ser chamada de <b>SUBCLASSE</b>.
+
+```java
+
+/*Classe na qual outras classes podem se basear*/
+class Pessoa {
+	/*Atributos*/
+	private string nome;
+	private int idade;
+	
+	/*Métodos*/
+	public void fazerAniv() {
+	}
+	
+	/*Métodos Especiais*/
+	public string getNome() {
+		return nome;
+	}
+	public void setNome(string nome) {
+		this.nome = nome;
+	}
+	public int getIdade() {
+		return idade;
+	}
+	public void setIdade(int idade) {
+		this.idade = idade;
+	}
+}
+
+/*A classe Aluno(subclasses) é filha de Pessoa e Pessoa é mãe (progenitora ou superclasses) de Aluno*/
+class Aluno extends Pessoa {
+	private int matr;
+	private string curso;
+	/*Faltaram os getters and setters*/
+}
+```
 ___
 
 ## Polimorfismo
