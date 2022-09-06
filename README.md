@@ -1,12 +1,6 @@
 # Programação Orientada à Objetos
 > <p>Paradigma <b>(modelo, padrão para especificação de um problema)</b> baseado em objetos.Aproxima o mundo digital do mundo real</p>
-
-
-
-
-
-
-
+ 
 >Pilares de OO:
 <ul type="circle">
 	<li><i>Abstração:</i> processo pelo qual se isolam características de um objeto, considerando os que tenham em comum certos grupos de objetos.</li>
@@ -116,7 +110,7 @@ ___
 ___
 
 ## Herança
-> Permite basear uma nova classe na definição de uma outra classe previamente existente.Ex:
+> Permite basear uma nova classe na definição de uma outra classe previamente existente.
 
 <i>Tipos de Herança</i>
 <ul type="circle">
@@ -124,9 +118,17 @@ ___
 	<li><i>Herança para Diferença</i>.</li>
 </ul>
 
+![arvore](https://user-images.githubusercontent.com/96033603/188573123-96afdf1e-144f-4ade-82a8-4b550ee60f48.png)
+
+<i>Antes de dizer se uma dessas é apenas progenitora ou subclasse, deve analisar o ponto de vista<i/>
+
+<i>Para definir um descendente não conta a mãe e para definir um ancestral não pod ser ancestral das próprias filhas, apenas do neto para baixo<i/>
+
 <i>OBS:</i>A classe MÃE pode ser chamada de <b>PROGENITORA</b> ou então <b>SUPERCLASSE</b>.
 
 <i>OBS:</i>A classe FILHO pode ser chamada de <b>SUBCLASSE</b>.
+
+<b>Exemplo de Herança para Diferença.</b>
 
 ```java
 
@@ -162,6 +164,26 @@ class Aluno extends Pessoa {
 	/*Faltaram os getters and setters*/
 }
 ```
+<dl>
+<dt>Classe Abstrata</dt>
+<dd>Não pode ser instanciada. Só pode servir como progenitora.</dd>
+</dl>
+
+<dl>
+<dt>Método Abstrato</dt>
+<dd>Declarado, mas não implementado na progenitora.</dd>
+</dl>
+
+<dl>
+<dt>Classe Final</dt>
+<dd>Não pode ser herdada por outra classe.Obrigatoriamente folha.</dd>
+</dl>
+
+<dl>
+<dt>Método Final</dt>
+<dd>Não pode ser sobrescrito pelas suas sub-classes.Obrigatoriamente herdado.</dd>
+</dl>
+
 ___
 
 ## Polimorfismo
@@ -452,3 +474,34 @@ public String toString(){ //mesma quantidade de parâmetro, mesmo nome etc...
 ```
 
 ___
+
+# Sobrecarga de Métodos e Sobrecarga de Construtores
+> Métodos de mesmo nome podem co-existir em uma mesma classe desde que a lista de argumentos seja distinta, usando o mecanismo de sobrecarga.
+
+```java
+public class Ponto2D {
+	private int x;
+	private int y;
+	public Ponto2D(int x, int y) {
+		this.x = x;
+		this.y = y;
+	}
+	public Ponto2D( ) {
+		this(0,0);
+	}
+}
+```
+> Um objeto dessa classe tem dois atributos privativos que definem as coordenadas do ponto bidi-mensional, x e y — nesse caso, as coordenadas são valores inteiros.
+A classe tem dois construtores. 
+
+> O primeiro deles recebe dois argumentos, também de nome x e y, que definem as coordenadas do ponto criado. Para diferenciar no corpo do construtor os parâmetros dos atributos, estes têm seu nome prefixado pela palavra-chave this.
+
+> O segundo construtor ilustra outro uso da palavra-chave this. Esse construtor não recebe argumentos e assume portanto o ponto tem como cordenadas a origem, ou seja, o ponto (0,0). O corpo desse construtor poderia ser simplesmente
+
+x = 0;
+y = 0;
+
+A alternativa apresentada usa a forma
+this(0,0);
+
+que equivale a “use o construtor desta mesma classe que recebe dois argumentos inteiros, passando os valores aqui especificados”.
