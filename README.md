@@ -40,7 +40,7 @@ ___
 ___
 
 ## Encapsulamento 
-> Conceito que representa ocultação de dados. Isso significa que as variáveis são encapsuladas na classe e outras classes não podem acessá-las diretamente. Podemos acecssá-los apenas por meio dos métodos de classe pública.Desta forma, podemos ocultar dados importantes e restringir sua modificação.
+> Conceito que representa ocultação de dados. Isso significa que as variáveis são encapsuladas na classe e outras classes não podem acessá-las diretamente. Podemos acessá-los apenas por meio dos métodos de classe pública.Desta forma, podemos ocultar dados importantes e restringir sua modificação.
 
 ![uml3](https://user-images.githubusercontent.com/96033603/188363405-7fb4629c-9100-491b-be9d-b54f96b79431.png)
 
