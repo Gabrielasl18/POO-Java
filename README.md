@@ -61,6 +61,10 @@ ___
 ## Classes
 > É um gabarito para a definição de objetos.Através da definição de uma classe, descreve-se que propriedades —— ou atributos —— o objeto terá.Ou seja, classe é um agrupamento de objetos, consiste nos métodos e nos dados que um determinado objeto irá possuir. 
 
+Basicamente podemos dividir o processo de modelagem nas seguintes fases:
+* Análise/projeto;
+* Implementação.
+
 >A programação orientada a objetos consiste em implementar as classes e na utilização das mesmas, através da sua intercomunicação. <i>(o objeto é uma instância da classe)</i>
 
 ___
@@ -183,6 +187,22 @@ class Aluno extends Pessoa {
 <dt>Método Final</dt>
 <dd>Não pode ser sobrescrito pelas suas sub-classes.Obrigatoriamente herdado.</dd>
 </dl>
+
+___
+
+## A Palavra-chave super
+> Esse comando ativa o construtor da superclasse, fazendo com que sejam inicializados os atributor herados da superclasse. Quando derivamos uma subclasse, os construtores da superclasse não são herdados, entretanto, através da palavra-chave super é possível ativá-los a partir de um construtor da classe. A palavra super permite acesso a métodos e construtores da superclasse. 
+
+<dl> 
+	<dt>super(x1,x2...xn)</dt>
+	<dd>Permite a chamada do construtor da superclasse, sempre que a superclasse não possui um construtor "default".</dd>
+	<dt>super.metodo(...)</dt>
+	<dd>Permite que uma classe possa utilizar métodos definidos em sua superclasse.</dd>
+</dl>
+
+
+Construtor "default" é aquele que não possui parâmetros.
+Esta chamada deve ser a <b>primeira</b> dentro do construtor da classe. O construtor da classe imediatamente superior será chamado.
 
 ___
 
@@ -356,7 +376,7 @@ ___
 
 ___ 
 
-## Getters and Setters
+## Métodos de Acesso ao Atributo
 > Usados para proteger seus dados, especialmente na criação de classes.
 > Para cada instância de variável, um método getter retorna seu valor, 
 enquanto um método setter define ou atualiza.Com isso em mente, getters e setters também são conhecidos como métodos de ACESSO e de  
@@ -477,7 +497,7 @@ ___
 
 # Sobrecarga de Métodos e Sobrecarga de Construtores
 > Métodos de mesmo nome podem co-existir em uma mesma classe desde que a lista de argumentos seja distinta, usando o mecanismo de sobrecarga.
-
+> Construtores -> métodos para construir uma instância explicitamente(ou não) seus atributos. 
 ```java
 public class Ponto2D {
 	private int x;
@@ -505,3 +525,10 @@ A alternativa apresentada usa a forma
 this(0,0);
 
 que equivale a “use o construtor desta mesma classe que recebe dois argumentos inteiros, passando os valores aqui especificados”.
+___
+
+> Outros tipos de valores em Java
+* int -> representa uma quantidade numérica inteira. Uma variável declarada do tipo <i>int</i> ocupa 4 bytes de memórias.
+* short -> representa uma quantidade numérica inteira. Uma variável declarada do tipo <i>short</i> ocupa apenas 2 bytes de memória e tem um certo intervalo para possíveis valores (diferente do tipo int).
+* byte -> representa uma quantidade numérica inteira. Uma variável declarada do tipo <i>byte</i> ocupa 1 byte de memória.
+* long -> representa uma quantidade numérica inteira. Uma variável declarada do tipo <i>long</i> ocupa 8 bytes na memória.
