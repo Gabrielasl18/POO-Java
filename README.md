@@ -11,6 +11,7 @@
 <b>OU</b>
 
 <ul type="circle">
+	<li><i>Abstração:</i> processo pelo qual se isolam características de um objeto, considerando os que tenham em comum certos grupos de objetos.</li>
 	<li><i>Encapsulamento:</i> Permite de esconder complexidades e proteger dados.</li>
 	<li><i>Herança:</i> Permite basear uma nova classe na definição de uma outra classe previamente existente.</li>
 	<li><i>Polimorfismo:</i> Permite que um mesmo nome represente vários <i>comportamentos</i> diferentes.</li>
