@@ -1,25 +1,47 @@
+package questoes;
+
 import java.util.HashMap;
 import java.util.Map;
 
 public class DataBase {
 	public static void main(String[] args) {
 		Map<String,Double> m = new HashMap<String,Double>();
-            m.put("1234#1",1000.70);
-            m.put("553742#3",10000.50);
-            m.put("12#2",1300.10);
-            m.put("4343#1",1000.80);
-            double med = calculaMedia(m,1);//essa chamada deve calcular a média dos salários dos funcionários com código do cargo 1.
-            System.out.println(med);
-            System.out.println(m.values());
-            System.out.println(m.keySet());
-	}
-
-	public static double calculaMedia(Map<String,Double> g, int cargo) {
-		
-			return cargo;
+		ABC media = new ABC();
+		    m.put("1234#1",1000.70);
+	        m.put("553742#3",10000.50);
+	        m.put("12#2",1300.10);
+	        m.put("4343#1",1000.80);
+	        media.calculaMedia(m, '1');
 	}
 }
-//class ABC {
-//	//código.
-//	//escreva seu código como se ele fosse ser inserido aqui.    
-//}
+class ABC {
+	public double calculaMedia(Map<String,Double> g, char cargo) {
+		String lastCharacter = null;
+		double mediaCargo = 0;
+		int contCargo = 0;
+		for (String key: g.keySet()){  
+			System.out.println(key+ " = " + g.get(key));
+			lastCharacter = key.substring(key.length() - 1);
+			char[] lastChar = lastCharacter.toCharArray();
+			char ultimo = lastChar[lastChar.length - 1];
+			System.out.println("Last char: " + ultimo);
+			if(ultimo == cargo) {
+				mediaCargo += g.get(key);
+				System.out.println("analista");
+				contCargo++;
+			}
+			else if(ultimo == cargo) {
+				mediaCargo += g.get(key);
+				System.out.println("gerente");
+				contCargo++;
+			}
+		} 	
+		if(cargo == '1') {			
+			System.out.println("media analista -> " + (mediaCargo/contCargo));
+		}
+		else if(cargo == '2') {			
+			System.out.println("media gerente -> " + (mediaCargo/contCargo));
+		}
+		return cargo;
+	}
+}

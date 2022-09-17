@@ -1,3 +1,5 @@
+package questoes;
+
 public class Quadrado {
 	private double alt;
 	private double larg;
