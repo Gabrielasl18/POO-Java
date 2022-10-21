@@ -1,4 +1,4 @@
-# Programação Orientada à Objetos
+# Programação Orientada a Objetos
 > <p>Paradigma <b>(modelo, padrão para especificação de um problema)</b> baseado em objetos.Aproxima o mundo digital do mundo real</p>
  
 >Pilares de OO:
