@@ -1,0 +1,3 @@
+> Número 6 (questões "errada")
+* Receber como parâmetro 1 lutador e um array de lutadores;
+* Sortear dentro do array de lutadores 1 lutador pra lutar com ele (da mesma categoria).
