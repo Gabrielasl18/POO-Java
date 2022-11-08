@@ -533,3 +533,5 @@ ___
 * short -> representa uma quantidade numérica inteira. Uma variável declarada do tipo <i>short</i> ocupa apenas 2 bytes de memória e tem um certo intervalo para possíveis valores (diferente do tipo int).
 * byte -> representa uma quantidade numérica inteira. Uma variável declarada do tipo <i>byte</i> ocupa 1 byte de memória.
 * long -> representa uma quantidade numérica inteira. Uma variável declarada do tipo <i>long</i> ocupa 8 bytes na memória.
+	
+[https://www.geeksforgeeks.org/upcasting-vs-downcasting-in-java/](UpCasting/DownCasting)
