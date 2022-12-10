@@ -22,14 +22,14 @@ public class Main {
 			}
 			
 			System.out.println("\n criando alunos.\n");
-			/*Pegando apenas o retorno values(Aluno) de um map no método Utils e adicionando num list aluno*/
+			/*Pegando apenas o retorno values(Aluno) de um map no mÃ©todo retornaDados da classe Utils e adicionando num list aluno*/
 			aluno.addAll(Utils.retornaDados(x).values());
 			
-			System.out.println("\n exibindo alunos com nomes ordenados em ordem alfabética.\n");
-			/*Método que ordena um list de alunos*/
+			System.out.println("\n exibindo alunos com nomes ordenados em ordem alfabÃ©tica.\n");
+			/*MÃ©todo que ordena um list de alunos*/
 			Utils.ordena(aluno);
 			
-			/*Exibe cada aluno com nomes ordenados em ordem alfabética e suas respectivas notas*/
+			/*Exibe cada aluno com nomes ordenados em ordem alfabÃ©tica e suas respectivas notas*/
 			for(int i=0; i<aluno.size();i++) {				
 				System.out.println("nome-> " + aluno.get(i).getNome() + " nota:: " + aluno.get(i).getNota());
 			}
