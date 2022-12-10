@@ -9,33 +9,27 @@ public class Utils {
 	public static void ordena(List<Aluno> x) {
 		x.sort(Comparator.comparing(Aluno::getNome));
 	}
-	public Map<String, Aluno> retornaDados(Set conjuntoAlunos) {
+	public static Map<String, Aluno> retornaDados(Set conjuntoAlunos) {
 		Map<String,Aluno> mapaAlunos = new HashMap<String,Aluno>();
 		Iterator it = conjuntoAlunos.iterator();
-
 		while(it.hasNext()) {
 			String k = it.next().toString();
-			System.out.println(k);
 			String arrayK [] = k.split("#");
-			if(arrayK[1].equals("E")) {
+			if(arrayK[3].equals("E")) {
 				AlunoEspecial alunoE = new AlunoEspecial(arrayK[0]);
-				System.out.println("nome: ...");
-				System.out.println("notas: ...");
-				alunoE.setNota(7);
+				alunoE.setNome(arrayK[1]);
+				alunoE.setNota(Double.parseDouble(arrayK[2]));
 				mapaAlunos.put(arrayK[0], alunoE);
 				System.out.println("aluno E criado.");
 			}
-			else if(arrayK[1].equals("R")){
+			else if(arrayK[3].equals("R")){
 				AlunoRegular alunoR = new AlunoRegular(arrayK[0]);
-				System.out.println("nome: ...");
-				System.out.println("notas: ...");
-				alunoR.setNota(8); 
+				alunoR.setNome(arrayK[1]);
+				alunoR.setNota(Double.parseDouble(arrayK[2]));
 				mapaAlunos.put(arrayK[0], alunoR);
 				System.out.println("aluno R criado.");
 			}
-			else {
-				
-			}
+		
 		}
 		return mapaAlunos;
 	}
